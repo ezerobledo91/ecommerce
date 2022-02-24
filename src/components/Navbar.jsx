@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
+
 const Container = styled.div`
-  height: 60px;
+  /* height: 60px; */
 `
 
 const Wrapper = styled.div`
@@ -21,7 +22,6 @@ const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
 `
-
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
@@ -50,6 +50,7 @@ const Right = styled.div`
 
 const MenuItem = styled.div`
   margin-left: 25px;
+  cursor: pointer;
 `
 
 const Navbar = () => {
