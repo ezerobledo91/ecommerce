@@ -117,13 +117,13 @@ const Fotter = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <MapOutlined style={{marginRight:'10px'}} /> False Adress 123, Springfield EEUU
+          <MapOutlined style={{ marginRight: '10px' }} /> False Adress 123, Springfield EEUU
         </ContactItem>
         <ContactItem>
-          <PhoneOutlined style={{marginRight:'10px'}}/> +54-321-2233453
+          <PhoneOutlined style={{ marginRight: '10px' }} /> +54-321-2233453
         </ContactItem>
         <ContactItem>
-          <EmailOutlined style={{marginRight:'10px'}}/> contact@romastore.buy
+          <EmailOutlined style={{ marginRight: '10px' }} /> contact@romastore.buy
         </ContactItem>
         <PaymentImg src='https://support.vyprvpn.com/hc/article_attachments/360084396232/bm2021_accepted_payments_cards.PNG' />
       </Right>
