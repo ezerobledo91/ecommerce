@@ -117,7 +117,7 @@ const Fotter = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <MapOutlined style={{ marginRight: '10px' }} /> False Adress 123, Springfield EEUU
+          <MapOutlined style={{ marginRight: '10px' }} /> Fake Address 123, Springfield EEUU
         </ContactItem>
         <ContactItem>
           <PhoneOutlined style={{ marginRight: '10px' }} /> +54-321-2233453
