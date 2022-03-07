@@ -8,6 +8,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 10px;
 `
 
 const Announcement = () => {

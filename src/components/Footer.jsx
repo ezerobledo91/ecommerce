@@ -1,11 +1,15 @@
 import { EmailOutlined, Facebook, Instagram, MapOutlined, PhoneOutlined, YouTube } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
   display: flex;
   width: 100%;
   background-color: white;
+  ${mobile({
+  flexDirection: 'column'
+  })}
 `
 const Left = styled.div`
   padding: 20px;
@@ -45,6 +49,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({
+  display: 'none'
+  })}
 `
 
 const Title = styled.h3`
@@ -70,6 +77,9 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
+  ${mobile({
+  backgroundColor: '#f3f3f3'
+  })}
 `
 const ContactItem = styled.div`
   display: flex;

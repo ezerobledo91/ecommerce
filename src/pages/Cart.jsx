@@ -4,11 +4,16 @@ import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Add, Remove } from '@material-ui/icons'
+import { mobile } from '../responsive'
 
 const Container = styled.div``
 
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({
+    padding: '10px',
+  })}
+  
 `
 
 const Title = styled.h1`
@@ -21,6 +26,9 @@ const Top = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  ${mobile({
+    padding: '10px',
+  })}
 `
 const TopButton = styled.button`
   padding: 10px;
@@ -29,6 +37,9 @@ const TopButton = styled.button`
   border: ${(props) => props.type === 'filled' && 'none'};
   background-color: ${(props) => (props.type === 'filled' ? 'black' : 'transparent')};
   color: ${(props) => props.type === 'filled' && 'white'};
+  ${mobile({
+    padding: '5px',
+  })}
 `
 
 const TopTexts = styled.div``
@@ -37,11 +48,17 @@ const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
   margin: 0px 10px;
+  ${mobile({
+    display: 'none',
+  })}
 `
 
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({
+    flexDirection: 'column',
+  })}
 `
 
 const Info = styled.div`
@@ -51,6 +68,9 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({
+    flexDirection: 'column',
+  })}
 `
 const ProductDetail = styled.div`
   display: flex;
@@ -89,6 +109,9 @@ const ProductAmountContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  ${mobile({
+    marginBottom: '0px',
+  })}
 `
 const ProductAmount = styled.div`
   font-size: 24px;
@@ -114,6 +137,10 @@ const Summary = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  ${mobile({
+    marginTop: '20px',
+  })}
+  
 `
 
 const SummaryTitle = styled.h1`
